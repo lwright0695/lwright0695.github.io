@@ -176,7 +176,7 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
+		text-align: left;
 		margin: 0 0 2rem 0;
 	}
 
@@ -2871,6 +2871,15 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
+	#main section ul {
+		padding-left: 1.25rem;
+		margin-left: 0;
+	}
+
+	#main section ul li {
+		margin-bottom: 0.5rem;
+	}
+	
 	dl {
 		margin: 0 0 2rem 0;
 	}
@@ -3703,7 +3712,14 @@ input, select, textarea {
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
+
+				/* refinement: subtle separators */
+				border-left: 1px solid rgba(255, 255, 255, 0.15);
 			}
+
+				#nav ul.links li:first-child {
+					border-left: 0;
+				}
 
 				#nav ul.links li a {
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3713,7 +3729,9 @@ input, select, textarea {
 					display: block;
 					font-size: 0.8rem;
 					outline: none;
-					padding: 0 2rem;
+
+					/* refinement: tighter spacing */
+					padding: 0 1.25rem;
 				}
 
 					#nav ul.links li a:hover {
@@ -3721,8 +3739,9 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
+				/* refinement: softer active tab (and keep text readable) */
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: rgba(255, 255, 255, 0.9);
 				}
 
 					#nav ul.links li.active a {
@@ -3752,6 +3771,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 /* Main */
 
@@ -4687,3 +4707,206 @@ input, select, textarea {
 		}
 
 	}
+
+	/* =========================
+   Custom Branding Overrides
+   ========================= */
+
+/* Modern Color Palette */
+:root {
+  --primary: #0A2540;
+  --accent: #2E86DE;
+  --soft-gray: #f8f9fb;
+  --border-soft: #e6e9ef;
+}
+
+/* Body Text Improvements */
+body {
+  color: #1f2933;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Improve Paragraph Readability */
+p {
+  text-align: left;
+  max-width: 850px;
+  margin: 0 0 2rem 0;
+}
+
+/* Headings – Less Harsh, More Modern */
+h1, h2, h3, h4 {
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+/* Reduce Heavy Borders in Posts */
+#main > .posts > article {
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+}
+
+/* Add Soft Card Effect */
+#main > .posts > article:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+/* Improve Button Look */
+.button {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.button.primary {
+  background-color: var(--accent);
+}
+
+.button.primary:hover {
+  background-color: #1c6fd1;
+}
+
+/* Improve Section Spacing */
+#main > * {
+  padding: 5rem 4rem 3rem 4rem;
+}
+
+/* Make Featured Post Cleaner */
+.post.featured {
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Technical Background section polish */
+#technical-background {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#technical-background ul {
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+  padding-left: 1.25rem;
+}
+
+#technical-background li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+#technical-background a {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+#technical-background a:hover {
+  color: #18bfef !important;
+}
+
+/* =========================
+   Project Card Modernization
+   ========================= */
+
+#main > .posts > article {
+  border: 1px solid #e6e9ef;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+
+#main > .posts > article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Reduce internal padding slightly */
+#main > .posts > * {
+  padding: 3rem;
+}
+
+/* Improve project titles */
+.posts h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+/* Improve project descriptions */
+.posts p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Intro Section Polish
+   ========================= */
+
+#intro {
+  padding: 7rem 2.5rem 5rem 2.5rem;
+}
+
+#intro h1 {
+  font-size: 4rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+#intro p {
+  max-width: 900px;
+  font-style: normal;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* Make the intro links feel intentional */
+#intro a {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+#intro a:hover {
+  color: #18bfef !important;
+}
+
+/* Scroll offset for anchored sections */
+#projects,
+#technical-background,
+#career-focus {
+  scroll-margin-top: 6rem;
+}
+
+/* =========================
+   Section Scroll + Spacing
+   ========================= */
+
+#projects,
+#technical-background,
+#career-focus {
+  scroll-margin-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* =========================
+   Section Header Refinement
+   ========================= */
+
+.section h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Subtle underline accent */
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #18bfef;
+  margin-top: 0.75rem;
+}
+
