@@ -20,9 +20,9 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Lisa Wright's Portfolio</h1>
-						<p>Data analyst in training with a background in technical problem-solving and process improvement. This portfolio 
-							showcases hands-on projects where I analyze real datasets using SQL, Excel, and Tableau to uncover trends and 
-							communicate insights effectively. <a href="https://www.linkedin.com/in/lisa-wright-9797bb181/" target="_blank">@LisaWright</a></p>
+						<p>Data Analyst with a background in AWS data center operations and process improvement.</p>
+						<p>Skilled in SQL, Python (Pandas), Excel, and Tableau — with a focus on cleaning, analyzing, and visualizing data to uncover trends and deliver actionable insights.</p> 
+						<p><a href="https://www.linkedin.com/in/lisa-wright-9797bb181/" target="_blank">Linkedin</a> | <a href='https://github.com/lwright0695/Data-Analytics-Portfolio' target='_blank'>Github</a></p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -36,78 +36,102 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li><a href="#technical-background" class="scrolly">Technical Background</a></li>
+							<li><a href="#career-focus" class="scrolly">Career Focus</a></li>
+							<li><a href="#projects" class="scrolly">Projects</a></li>
 						</ul>
+
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/lisa-wright-9797bb181/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/lwright0695" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/lwright0695/Data-Analytics-Portfolio" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
+						
+						<section id="technical-background" class="section">
+ 							 <h2>Technical Background</h2>
+							 <p>
+							 <ul>
+								<li>4+ years supporting mission-critical infrastructure in AWS data center environments</li>
+								<li>Hands-on experience with hardware troubleshooting, system documentation, and operational process improvement</li>
+								<li><a href="https://www.credly.com/badges/92e5c0be-225f-4e5f-b3d4-853f6d773822/public_url" target="_blank" rel="noopener noreferrer">AWS Certified Cloud Practitioner</a></li>
+								<li><a href="https://www.credly.com/badges/6acc0b8b-2edf-4dd4-a023-04937c95c914/public_url" target="_blank" rel="noopener noreferrer">CompTIA A+ Certified</a></li>
+							</ul>
+							</p>
+						</section>
+						
+						<section id="career-focus" class="section">
+							<h2>Career Focus</h2>
+							<p>I am actively seeking entry-level to junior data analyst roles where I can apply SQL, data cleaning, exploratory analysis, and dashboard development skills to support data-driven decision-making. With a foundation in mission-critical infrastructure and a growing analytics toolkit, I bring a practical, detail-oriented perspective to data problems. I am especially drawn to roles that bridge operational knowledge with analytics and business reporting.</p>
+						</section>
 
+						<section id="projects" class="section">
+							<header>
+								<h2>Projects</h2>
+							</header>
+
+							<section class="posts">
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
+							<article class="post">
+								<header>
 									
-									<h2><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Data%20Cleaning%20Project.sql" target="_blank">Data Cleaning in SQL<br />
+									<h2><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Data%20Cleaning%20Project.sql" target="_blank">Data Cleaning & Transformation in MySQL<br />
 									</a></h2>
-									<p>This MySQL project demonstrates data cleaning techniques using a real-world layoffs 
-										dataset, including removing duplicates, standardizing values, and handling null 
-										entries to prepare the data for analysis.</p>
+									<p>Using MySQL, I cleaned and prepared a real-world layoffs dataset by building staging tables and systematically improving data quality. I removed duplicate records using ROW_NUMBER() and CTEs, standardized inconsistent text and categorical values, reformatted date fields, resolved null and blank entries, and optimized column structures — producing an analysis-ready dataset with strong integrity for downstream reporting and exploratory analysis.</p>
 								</header>
-								<a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Data%20Cleaning%20Project.sql" target="_blank" class="image main"><img src="images/layoff1.jpg" alt="" /></a>
+								<a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Data%20Cleaning%20Project.sql" target="_blank" class="image main"><img src="images/Data Cleaning.png" alt="Data cleaning project screenshot" /></a>
 								<ul class="actions special">
 									<li><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Data%20Cleaning%20Project.sql" target="_blank" class="button large">View Project</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
 								<article>
 									<header>
 										
-										<h2><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploritory%20Data%20Analysis%20Project.sql" target="_blank">Exploratory Data Analysis of Layoffs (SQL)</h2>
+										<h2><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploratory%20Data%20Analysis%20Project.sql" target="_blank">Exploratory Data Analysis & Trend Modeling (MySQL)</a></h2>
 									</header>
-									<a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploritory%20Data%20Analysis%20Project.sql" target="_blank" class="image fit"><img src="images/layoff2.jpg" alt="" /></a>
-									<p>This project demonstrates a complete exploratory data analysis using MySQL, where SQL queries are used to explore a layoffs dataset, starting with basic metrics and progressing to more advanced trend analysis to derive insights from the data.</p>
+									<a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploratory%20Data%20Analysis%20Project.sql" target="_blank" class="image fit"><img src="images/Exploratory Data Analysis.png" alt="Exploratory data analysis project screenshot" /></a>
+									<p>Building on the cleaned layoffs dataset, I performed exploratory data analysis in MySQL to surface trends and patterns. I analyzed total and percentage layoffs by company, industry, and country, then examined shifts over time using monthly and yearly aggregations. Techniques included GROUP BY, CTEs, window functions, rolling totals, and ranking functions — revealing which sectors and companies experienced the steepest workforce reductions year over year.</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploritory%20Data%20Analysis%20Project.sql" target="_blank" class="button">View Project</a></li>
+										<li><a href="https://github.com/lwright0695/Data-Analytics-Portfolio/blob/main/Exploratory%20Data%20Analysis%20Project.sql" target="_blank" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										
-										<h2><a href="https://public.tableau.com/app/profile/lisa.wright6582/vizzes" target="_blank">Tableau Dashboards</a></h2>
+										<h2><a href="https://public.tableau.com/app/profile/lisa.wright6582/vizzes" target="_blank">Interactive Data Visualization Portfolio (Tableau)</a></h2>
 									</header>
-									<a href="https://public.tableau.com/app/profile/lisa.wright6582/vizzes" target="_blank" class="image fit"><img src="images/Tableau.webp" alt="" /></a>
-									<p>Interactive Tableau dashboards showcasing exploratory analysis, trend identification, and data-driven insights across real-world datasets.</p>
+									<a href="https://public.tableau.com/app/profile/lisa.wright6582/vizzes" target="_blank" class="image fit"><img src="images/Tableau1.png" alt="Tableau project screenshot" /></a>
+									<p>My Tableau Public portfolio features interactive dashboards built from real-world datasets, with an emphasis on exploratory analysis, trend identification, and translating raw data into clear business insights. New dashboards are added as I complete projects, reflecting continued growth in data visualization and storytelling.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/app/profile/lisa.wright6582/vizzes" target="_blank" class="button">View Project</a></li>
 									</ul>
 								</article>
 							</section>
+						</section>
 
-
-							<section class="split contact">
+					<footer id="footer">
+						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
-								<p>Winchester, VA 22602</p>
+								<p>Winchester, VA (Open to remote / hybrid)</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(304) 707-7200</a></p>
+								<p><a href="tel:+13047077200">(304) 707-7200</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">lwright0695@gmail.com</a></p>
+								<p><a href="mailto:lwright0695@gmail.com">lwright0695@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="https://www.linkedin.com/in/lisa-wright-9797bb181/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/lwright0695" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/lwright0695/Data-Analytics-Portfolio" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -115,9 +139,14 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul>
+							<li>&copy; 2026 Lisa Wright</li>
+							<li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
+						</ul>
+
 					</div>
 
+					</div>
 			</div>
 
 		<!-- Scripts -->
@@ -130,5 +159,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-
 </html>
